@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 #-------------------------------------------------------------------------------
-# Copyright (c) 2015 Artur Eganyan
+# Copyright (c) 2015, 2016 Artur Eganyan
 #
 # This work is provided "AS IS", WITHOUT ANY WARRANTY, express or implied.
 #-------------------------------------------------------------------------------
@@ -170,7 +170,7 @@ def f(self):
 a = A()
 a.f = f     # В экземпляр записывается ссылка на внешнюю функцию f
             
-#a.g()      # TypeError: f() takes exactly 1 argument (0 given)
+#a.f()      # TypeError: f() takes exactly 1 argument (0 given)
             # Здесь правильно было бы вызвать a.f(a), потому что a.f
             # не ведет себя как метод. Только функции, находящиеся в
             # классе, преобразуются в связанные методы при обращении

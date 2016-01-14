@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 #-------------------------------------------------------------------------------
-# Copyright (c) 2015 Artur Eganyan
+# Copyright (c) 2015, 2016 Artur Eganyan
 #
 # This work is provided "AS IS", WITHOUT ANY WARRANTY, express or implied.
 #-------------------------------------------------------------------------------
@@ -61,7 +61,7 @@ class A(object):
 
 class B(A):
     pass
-# В этом месте будет выполнено B = M("A", (B), переменные)
+# В этом месте будет выполнено B = M("B", (A), переменные)
 
 print M.classes  # [<class '__main__.A'>, <class '__main__.B'>]
 
